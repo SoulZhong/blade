@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+
+<!--[if !IE]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+
+<!-- BEGIN HEAD -->
+
+<head>
+<meta charset="utf-8" />
+
+<title>管理系统</title>
+
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+<meta content="" name="description" />
+
+<meta content="" name="author" />
+
+<!-- BEGIN GLOBAL MANDATORY STYLES -->
+
+<link href="${requestContext.contextPath}/media/css/bootstrap.min.css" rel="stylesheet"
+	type="text/css" />
+
+<link href="${requestContext.contextPath}/media/css/bootstrap-responsive.min.css" rel="stylesheet"
+	type="text/css" />
+
+<link href="${requestContext.contextPath}/media/css/font-awesome.min.css" rel="stylesheet"
+	type="text/css" />
+
+<link href="${requestContext.contextPath}/media/css/style-metro.css" rel="stylesheet" type="text/css" />
+
+<link href="${requestContext.contextPath}/media/css/style.css" rel="stylesheet" type="text/css" />
+
+<link href="${requestContext.contextPath}/media/css/style-responsive.css" rel="stylesheet"
+	type="text/css" />
+
+<link href="${requestContext.contextPath}/media/css/default.css" rel="stylesheet" type="text/css"
+	id="style_color" />
+
+<link href="${requestContext.contextPath}/media/css/uniform.default.css" rel="stylesheet"
+	type="text/css" />
+
+<!-- END GLOBAL MANDATORY STYLES -->
+
+<!-- BEGIN PAGE LEVEL STYLES -->
+
+<link href="${requestContext.contextPath}/media/css/jquery.gritter.css" rel="stylesheet"
+	type="text/css" />
+
+<link href="${requestContext.contextPath}/media/css/daterangepicker.css" rel="stylesheet"
+	type="text/css" />
+
+<link href="${requestContext.contextPath}/media/css/fullcalendar.css" rel="stylesheet" type="text/css" />
+
+<link href="${requestContext.contextPath}/media/css/jqvmap.css" rel="stylesheet" type="text/css"
+	media="screen" />
+
+<link href="${requestContext.contextPath}/media/css/jquery.easy-pie-chart.css" rel="stylesheet"
+	type="text/css" media="screen" />
+
+<!-- END PAGE LEVEL STYLES -->
+
+<link rel="shortcut icon" href="${requestContext.contextPath}/media/image/favicon.ico" />
+
+</head>
+
+<!-- END HEAD -->
+
+<!-- BEGIN BODY -->
+
+<body class="page-header-fixed">
+
+	<!-- BEGIN HEADER -->
+	#parse("/layout/common/nav.html")
+	<!-- END HEADER -->
+
+
+	<!-- BEGIN CONTAINER -->
+
+	<div class="page-container">
+
+		<!-- BEGIN SIDEBAR -->
+
+		#parse("/layout/common/sidebar.html")
+
+		<!-- END SIDEBAR -->
+
+		<!-- BEGIN PAGE -->
+
+		<div class="page-content">${screen_content}</div>
+		<!-- END PAGE -->
+
+	</div>
+
+	<!-- END CONTAINER -->
+
+	<!-- BEGIN FOOTER -->
+
+	<div class="footer">
+#parse("/layout/common/footer.html")
+
+	</div>
+
+	<!-- END FOOTER -->
+
+
+
+</body>
+
+<!-- END BODY -->
+
+</html>
