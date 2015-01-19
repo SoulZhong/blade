@@ -1,9 +1,9 @@
-package org.krams.service;
+package so.reap.blade.service;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-import org.krams.repository.UserRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -13,6 +13,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import so.reap.blade.repository.UserRepository;
 
 /**
  * A custom {@link UserDetailsService} where user information
@@ -32,7 +34,7 @@ public class CustomUserDetailsService implements UserDetailsService {
 	 */
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		try {
-			org.krams.domain.User domainUser = userRepository.findByUsername(username);
+			so.reap.blade.domain.User domainUser = userRepository.findByUsername(username);
 			
 			boolean enabled = true;
 			boolean accountNonExpired = true;

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<persistence
-	version="1.0"
-	xmlns="http://java.sun.com/xml/ns/persistence"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
-	<persistence-unit name="examplePU">
-		<class>so.reap.blade.entity.NewsEntry</class>
-		<class>so.reap.blade.entity.User</class>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="1.0">
+	<persistence-unit name="hibernatePersistenceUnit" transaction-type="RESOURCE_LOCAL">
+		<properties>
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
+		</properties>
+		<mapping-file>META-INF/orm.xml</mapping-file>
 	</persistence-unit>
 </persistence>

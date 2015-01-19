@@ -1,4 +1,4 @@
-package org.krams.domain;
+package so.reap.blade.domain;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;

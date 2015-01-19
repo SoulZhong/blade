@@ -1,4 +1,4 @@
-package org.krams.domain;
+package so.reap.blade.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

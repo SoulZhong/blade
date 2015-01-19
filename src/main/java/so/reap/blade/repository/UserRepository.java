@@ -1,7 +1,8 @@
-package org.krams.repository;
+package so.reap.blade.repository;
 
-import org.krams.domain.User;
 import org.springframework.data.jpa.repository.JpaRepository;
+
+import so.reap.blade.domain.User;
 
 public interface UserRepository extends JpaRepository<User, Long> {
 	
